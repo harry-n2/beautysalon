@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-gold-100: #FDF7E2;
+  --color-gold-300: #F4D068;
+  --color-gold-500: #D4AF37;
+  --color-gold-700: #AA882A;
+  --color-gold-900: #735B19;
+
+  --color-luxury-black: #111111;
+  --color-luxury-dark: #1A1A1A;
+  --color-luxury-gray: #333333;
+  --color-luxury-light: #FAFAFA;
+
+  --color-rose-gold: #B76E79;
+
+  --font-sans: "Noto Sans JP", sans-serif;
+  --font-serif: "Noto Serif JP", serif;
+}
+
+@layer base {
+  body {
+    @apply bg-luxury-light text-luxury-gray font-sans;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif text-luxury-black tracking-widest;
+  }
+}
+
+/* カスタムスクロールバー */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAFAFA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #AA882A;
+}
