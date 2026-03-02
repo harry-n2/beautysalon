@@ -8,7 +8,7 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <Router basename="/beautysalon">
+    <Router basename={import.meta.env.BASE_URL === '/' ? '/' : import.meta.env.BASE_URL.replace(/\/$/, '')}>
       <div className="bg-luxury-black font-sans text-luxury-light">
         <Header />
 
