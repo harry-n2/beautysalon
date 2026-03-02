@@ -8,11 +8,11 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen flex flex-col bg-luxury-black font-sans text-luxury-light">
+    <Router basename="/beautysalon">
+      <div className="bg-luxury-black font-sans text-luxury-light">
         <Header />
 
-        <main className="flex-grow">
+        <main>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/law" element={<Law />} />
