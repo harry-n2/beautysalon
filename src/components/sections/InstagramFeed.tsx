@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 
 const images = [
-    '/images/insta1.png',
-    '/images/insta2.png',
-    '/images/insta3.png'
+    `${import.meta.env.BASE_URL}images/insta1.png`,
+    `${import.meta.env.BASE_URL}images/insta2.png`,
+    `${import.meta.env.BASE_URL}images/insta3.png`
 ];
 
 const InstagramFeed = () => {
