@@ -19,7 +19,7 @@ const About = () => {
                         {/* 複数画像の重ね合わせで高級感を演出 */}
                         <div className="absolute top-0 right-0 w-4/5 h-4/5 rounded-sm overflow-hidden shadow-2xl border border-gold-500/20 z-10">
                             <img
-                                src="http://detox-maki.com/images/sample1.jpg"
+                                src={`${import.meta.env.BASE_URL}images/about1.jpg`}
                                 alt="代表 小倉真樹"
                                 className="w-full h-full object-cover select-none"
                             />
@@ -27,7 +27,7 @@ const About = () => {
                         </div>
                         <div className="absolute bottom-0 left-0 w-2/3 h-2/3 rounded-sm overflow-hidden shadow-2xl border border-white/10 z-20 transform -translate-y-8 translate-x-8">
                             <img
-                                src="http://detox-maki.com/images/sample2.jpg"
+                                src={`${import.meta.env.BASE_URL}images/about2.jpg`}
                                 alt="施術風景"
                                 className="w-full h-full object-cover select-none"
                             />
